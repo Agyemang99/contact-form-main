@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Style Sheet -->
+  <link rel="stylesheet" href="./styles.css">
+    <!--FontAwesome Link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Contact form</title>
+</head>
+<body>
+  <div class="total-container">
+    <div class="alert-box" id="alert-box">
+      <div class="alert-img">
+        <img src="./assets/images/icon-checkbox-check.svg" alt="icon-checkbox-check">
+        <h4>Message sent</h4>
+      </div>
+      <p>Thanks for completing this form,We'll be in touch soon</p>
+    </div>
+    <div class="container">
+      <div class="header">
+        <h2>Contact Us</h2>
+      </div>
+      <form class="form" id="form">
+        <div class="input-container">
+          <div class="name-container">
+            <div class="name-input">
+              <label for="fname">First Name <span class="star">*</span></label>
+              <input type="text" id="fname" >
+              <small></small>
+            </div>
+            <div class="name-input">
+              <label for="sname">Last Name <span class="star">*</span></label>
+              <input type="text" id="sname">
+              <small></small>
+            </div>
+          </div>
+        </div>
+        
+        <div class="input-container">
+          <div class="email-container">
+            <label for="email">Email Address <span class="star">*</span></label>
+            <input type="email" id="email" >
+            <small id="email-error"></small>
+          </div>
+        </div>
+        
+        <div class="input-container">
+          <fieldset>
+            <legend>Query Type<span class="star">*</span></legend>
+            <div class="query-container">
+              <input type="radio" id="select1" name="option">
+              <label for="select1">General Enquiry</label>
+            </div> 
+            <div class="query-container">
+              <input type="radio" id="select2" name="option">
+              <label for="select2">Support Request</label>
+            </div>
+            <small id="query-error"></small>
+          </fieldset>
+        </div>
+        
+        <div class="input-container">
+          <div class="msg-container">
+            <label for="text-field">Message <span class="star">*</span></label>
+            <input type="textarea" id="text-field" >
+            <small id="text-error"></small>
+          </div>
+        </div>
+        
+        <div class="input-container">
+          <div class="consent-container">
+            <div>
+              <input type="checkbox" id="check-box" name="checkbox" >
+              <label for="check-box">I consent to being contacted by the team <span class="star">*</span></label>
+            </div> 
+            <small id="check-error"></small>
+          </div>
+        </div>
+        
+        <div class="submit">
+          <button  type="submit" id="submit-btn">Submit</button>
+        </div>
+      </form>
+    </div>
+  
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
